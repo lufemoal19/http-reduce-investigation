@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>HTML Reduce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 class="titulo">Investigación <span>Web</span></h1> 
+            <!--span tag-->
+        </a>
+
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <a href="https://ieeexplore.ieee.org/abstract/document/844500">Articulo IEE</a>
+                <a href="https://sci-hub.ru/10.1109/65.844500">PDF</a>
+                <a href="https://github.com/lufemoal19/http-reduce-investigation.git">Source code</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h1>
+            Web Traffic Modeling Exploting TCP Connections Temporal Clustering through HTML-REDUCE
+        </h1>
+
+        <div class="nombre">
+            <h4>Autores:</h4>
+            <p>Maurizio Molina</p>
+            <p>Paolo Castelli</p>
+            <p>Gianluca Foddis</p>
+
+        </div>
+
+        <section class="article__text">
+            <h3>Problema</h3>
+            <article>
+                El tráfico en la web está dominando internet, tanto en volumen 
+                como cantidad de usuarios que lo usan, sin embargo, el estudio 
+                estadístico de este tráfico es mediocre, provocando que las reglas 
+                de dimensionamiento del ancho de banda para la parte de acceso a la 
+                red sean empíricas. Esta situación conduce a una gran infrautilización 
+                de los recursos de red.
+                Este articulo propone un modelo de tráfico web capaz de proporciones 
+                analíticas para el dimensionamiento del ancho de banda de las redes 
+                proveedoras y validarlo mediante simulaciones. Este modelo tiene en 
+                cuenta el comportamiento de los usuarios, el tamaño de las páginas 
+                solicitadas, la forma de transferir las páginas según HTTP.
+            </article>
+            <h3>Explicación</h3>
+            <article>
+                Primero se recopilan los encabezados de paquetes mediante Tcpdump, 
+                para que luego TCP-REDUCE extraiga los datos relacionados con cada 
+                conexión TCP establecida. Por último, se procesa la lista de conexiones 
+                mediante HTML-REDUCE aprovechando la agrupación temporal de conexiones 
+                TCP para construir una estructura de datos que contiene datos relevantes, 
+                y sobre esta estructura se realizan análisis estadísticos.
+            </article>
+            <h3>Otras Soluciones</h3>
+            <article>
+                Existen enfoques alternativos para realizar el modelado basado en mediciones 
+                del tráfico web, tal como BLT, pero se requiere mucho esfuerzo para desarrollar 
+                este tipo de herramientas, además de hardware de alto rendimiento para el 
+                análisis en línea.
+                Otra forma es analizar los registros de proxy, pero este no está enfocado 
+                a un análisis de distribuciones exhaustivo, además de que para analizar los 
+                registros de Proxy conlleva más esfuerzo que analizar la salida de TCP-REDUCE.
+            </article>
+        </section>
+
+        <div>
+            <h5>
+                Fecha: <span class="fecha"> May/June 2000</span>
+            </h5>
+        </div>
+
+        <div class="nombre estudiantes">
+            <h4>Estudiantes: </h4>
+            <p>Jesus Alejandro Gamboa Mata</p>
+            <p>Luis Felipe Morera Alvarez</p>
+        </div>
+    </main>
+
+    <footer class="footer nav-bg">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion-principal contenedor">
+                <a href="https://ieeexplore.ieee.org/abstract/document/844500">Articulo IEE</a>
+                <a href="https://sci-hub.ru/10.1109/65.844500">PDF</a>
+                <a href="https://github.com/lufemoal19/http-reduce-investigation.git">Source code</a>
+            </nav>
+        </div>
+        <p class="copyright">Todos los Derechos Reservados 2022 &copy;</p>
+    </footer>
+</body>
+</html>
